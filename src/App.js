@@ -19,7 +19,6 @@ class App extends Component {
   handleInput = event => {
     const request = event.target.value;
     provider.search({ query: request + ", France" }).then(results => {
-      console.log(request);
       this.setState({
         result: results,
         resultOpen: true,
